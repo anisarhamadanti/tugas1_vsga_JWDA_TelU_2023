@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tugas 1 JWD-A Anisa Rhamadanti</title>
+  <script>
+    function printInputs() {
+      var inputAngka = document.getElementById("inputAngka").value;
+      var output = "";
+      for (var i = 0; i < inputAngka; i++) {
+        output += "Angka ke " + i + ", ";
+      }
+      output = output.slice(0, -2);
+      document.getElementById("hasil").textContent = output;
+    }
+  </script>
+</head>
+<body>
+  <h1>Masukkan Jumlah Angka:</h1>
+  <input type="number" id="inputAngka" />
+  <button onclick="printInputs()">Cetak</button>
+  <p id="hasil"></p>
+</body>
+</html>
+ 
